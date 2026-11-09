@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Learn about TBARC India, its vision, mission and biodiversity research activities.">
+<title>About TBARC | TBARC Projects</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #26372e;
+  line-height: 1.7;
+}
+
+header {
+  background: white;
+  border-bottom: 1px solid #e8eee9;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 17px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand {
+  color: #174c37;
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 27px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #34483b;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a.active {
+  color: #278052;
+}
+
+.hero {
+  background: #174c37;
+  color: white;
+  padding: 85px 24px;
+}
+
+.hero-inner {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero span {
+  color: #b9dbbd;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 5vw, 55px);
+  margin: 12px 0;
+}
+
+.hero p {
+  color: #dce9df;
+  max-width: 650px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 24px;
+}
+
+.section-heading {
+  margin-bottom: 25px;
+}
+
+.section-heading span {
+  color: #39845b;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  color: #174c37;
+  font-size: 31px;
+  margin-top: 7px;
+}
+
+.about-text {
+  max-width: 900px;
+  color: #596a60;
+  font-size: 16px;
+}
+
+.about-text p {
+  margin-bottom: 18px;
+}
+
+.highlight-section {
+  background: #f4f8f4;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.mission-card {
+  background: white;
+  padding: 30px;
+  border: 1px solid #e5ece7;
+  border-radius: 9px;
+}
+
+.mission-card h3 {
+  color: #174c37;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.mission-card p {
+  color: #68776d;
+  font-size: 15px;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.focus-card {
+  padding: 25px;
+  background: #f6f8f6;
+  border-radius: 8px;
+  border-left: 3px solid #39845b;
+}
+
+.focus-card h3 {
+  color: #174c37;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.focus-card p {
+  color: #68776d;
+  font-size: 14px;
+}
+
+.cta {
+  background: #174c37;
+  color: white;
+  text-align: center;
+  padding: 65px 24px;
+}
+
+.cta h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.cta p {
+  color: #dce9df;
+  margin-bottom: 23px;
+}
+
+.cta a {
+  display: inline-block;
+  background: white;
+  color: #174c37;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+footer {
+  background: #102f23;
+  color: #d4e1d8;
+  padding: 35px 24px;
+  text-align: center;
+  font-size: 13px;
+}
+
+footer strong {
+  color: white;
+}
+
+@media(max-width: 800px) {
+  .focus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 13px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .mission-grid,
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 65px 20px;
+  }
+
+  .container {
+    padding: 50px 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="index.html" class="brand">TBARC PROJECTS</a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ongoing.html">Ongoing</a>
+      <a href="completed.html">Completed</a>
+      <a href="about.html" class="active">About TBARC</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span>About the Organisation</span>
+    <h1>About TBARC</h1>
+    <p>
+      Promoting biodiversity research, ecological understanding
+      and conservation through scientific initiatives
+      and collaborative efforts.
+    </p>
+  </div>
+</section>
+
+<section class="container">
+  <div class="section-heading">
+    <span>Who We Are</span>
+    <h2>About TBARC India</h2>
+  </div>
+
+  <div class="about-text">
+    <p>
+      TBARC India is an organisation focused on biodiversity,
+      ecology, environmental research and conservation.
+      Through scientific projects, field-based investigations
+      and collaborative initiatives, TBARC aims to contribute
+      to the understanding and conservation of natural ecosystems.
+    </p>
+
+    <p>
+      Our activities encompass biodiversity documentation,
+      ecological research, invasive species studies,
+      environmental monitoring and scientific knowledge sharing.
+      We encourage participation and collaboration among
+      researchers, students, institutions and nature enthusiasts.
+    </p>
+  </div>
+</section>
+
+<section class="highlight-section">
+  <div class="container">
+    <div class="section-heading">
+      <span>Our Purpose</span>
+      <h2>Vision & Mission</h2>
+    </div>
+
+    <div class="mission-grid">
+
+      <div class="mission-card">
+        <h3>Our Vision</h3>
+        <p>
+          To contribute towards a scientifically informed
+          society that values biodiversity, understands
+          ecological processes and supports environmental
+          conservation.
+        </p>
+      </div>
+
+      <div class="mission-card">
+        <h3>Our Mission</h3>
+        <p>
+          To promote biodiversity research, ecological
+          documentation, conservation initiatives and
+          scientific collaboration through meaningful
+          research and knowledge dissemination.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="section-heading">
+    <span>Our Work</span>
+    <h2>Areas of Focus</h2>
+    <p>Our major areas of research and conservation activities.</p>
+  </div>
+
+  <div class="focus-grid">
+
+    <div class="focus-card">
+      <h3>Biodiversity Research</h3>
+      <p>
+        Documentation, assessment and understanding
+        of biological diversity.
+      </p>
+    </div>
+
+    <div class="focus-card">
+      <h3>Ecology</h3>
+      <p>
+        Research on ecological processes,
+        ecosystems and environmental interactions.
+      </p>
+    </div>
+
+    <div class="focus-card">
+      <h3>Invasive Species</h3>
+      <p>
+        Research on invasive species distribution,
+        ecology and environmental impacts.
+      </p>
+    </div>
+
+    <div class="focus-card">
+      <h3>Conservation</h3>
+      <p>
+        Scientific initiatives supporting
+        biodiversity and habitat conservation.
+      </p>
+    </div>
+
+    <div class="focus-card">
+      <h3>GIS & Remote Sensing</h3>
+      <p>
+        Application of geospatial technologies
+        for ecological research and monitoring.
+      </p>
+    </div>
+
+    <div class="focus-card">
+      <h3>Citizen Science</h3>
+      <p>
+        Encouraging public participation
+        in biodiversity documentation and awareness.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Explore Our Projects</h2>
+  <p>
+    Discover the research and conservation initiatives
+    undertaken by TBARC.
+  </p>
+  <a href="ongoing.html">Explore Projects</a>
+</section>
+
+<footer>
+  <strong>TBARC India</strong>
+  <p>Biodiversity Research, Ecology & Conservation</p>
+  <p>© 2026 TBARC. All Rights Reserved.</p>
+  <p>projects.tbarc.in</p>
+</footer>
+
+</body>
+</html>
