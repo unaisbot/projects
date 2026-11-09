@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore biodiversity, ecology and conservation projects by TBARC India.">
+  <title>TBARC Projects | Biodiversity & Ecology</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #24332b;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e8eee9;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      padding: 17px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 24px;
+      font-weight: 800;
+      color: #174c37;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 27px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #34483b;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #258052;
+    }
+
+    .hero {
+      min-height: 530px;
+      background:
+        linear-gradient(90deg, rgba(10, 39, 29, .88), rgba(10, 39, 29, .28)),
+        url('assets/images/hero.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+      padding: 80px 24px;
+    }
+
+    .hero-content span {
+      color: #b9dbbd;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.13;
+      max-width: 750px;
+      margin: 20px 0;
+    }
+
+    .hero p {
+      max-width: 600px;
+      font-size: 17px;
+      color: #e4eee8;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 75px 24px;
+    }
+
+    .section-heading {
+      margin-bottom: 35px;
+    }
+
+    .section-heading span {
+      color: #38825a;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .section-heading h2 {
+      font-size: 34px;
+      color: #174c37;
+      margin-top: 8px;
+    }
+
+    .section-heading p {
+      color: #68776d;
+      margin-top: 8px;
+    }
+
+    .intro {
+      background: #f5f8f5;
+    }
+
+    .intro-content {
+      max-width: 850px;
+    }
+
+    .intro-content p {
+      color: #53645a;
+      font-size: 16px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .project-card {
+      border: 1px solid #e6ece7;
+      border-radius: 10px;
+      overflow: hidden;
+      background: white;
+      transition: .25s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,.08);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 22px;
+    }
+
+    .project-info small {
+      color: #38825a;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .project-info h3 {
+      color: #174c37;
+      margin: 8px 0;
+      font-size: 20px;
+    }
+
+    .project-info p {
+      color: #68776d;
+      font-size: 14px;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 18px;
+    }
+
+    .project-links a {
+      text-decoration: none;
+      color: #28784d;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .explore {
+      background: #174c37;
+      color: white;
+      text-align: center;
+      padding: 65px 24px;
+    }
+
+    .explore h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .explore p {
+      color: #d5e5da;
+      margin-bottom: 24px;
+    }
+
+    .explore a {
+      display: inline-block;
+      background: white;
+      color: #174c37;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #102f23;
+      color: #d4e1d8;
+      padding: 35px 24px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    @media(max-width: 800px) {
+      .navbar {
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .hero {
+        min-height: 460px;
+      }
+
+      .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(max-width: 550px) {
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 55px 20px;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="index.html" class="brand">TBARC PROJECTS</a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ongoing.html">Ongoing</a>
+      <a href="completed.html">Completed</a>
+      <a href="about.html">About TBARC</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <span>Biodiversity • Ecology • Conservation</span>
+    <h1>Exploring Nature Through Research & Conservation</h1>
+    <p>
+      Discover our biodiversity and ecological research initiatives,
+      conservation projects and scientific contributions towards
+      understanding and protecting nature.
+    </p>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="section">
+    <div class="section-heading">
+      <span>About our work</span>
+      <h2>Science for Nature</h2>
+    </div>
+
+    <div class="intro-content">
+      <p>
+        TBARC undertakes biodiversity research, ecological studies
+        and conservation initiatives to document natural ecosystems,
+        understand environmental changes and promote scientific
+        knowledge. Our projects bring together researchers,
+        students and nature enthusiasts to contribute to a
+        better understanding of biodiversity.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <span>Discover</span>
+    <h2>Our Projects</h2>
+    <p>Explore ongoing research and completed initiatives.</p>
+  </div>
+
+  <div class="project-grid">
+
+    <article class="project-card">
+      <img src="assets/images/projects/project-01.jpg"
+           alt="Wetland ecology research">
+      <div class="project-info">
+        <small>WETLAND ECOLOGY</small>
+        <h3>Wetland Biodiversity Research</h3>
+        <p>Ecological research and documentation of wetland ecosystems.</p>
+        <div class="project-links">
+          <a href="ongoing.html">Explore Projects →</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <img src="assets/images/projects/project-02.jpg"
+           alt="Invasive species research">
+      <div class="project-info">
+        <small>INVASIVE SPECIES</small>
+        <h3>Invasive Species Studies</h3>
+        <p>Research on the distribution and ecological impacts of invasive species.</p>
+        <div class="project-links">
+          <a href="ongoing.html">Explore Projects →</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <img src="assets/images/projects/project-03.jpg"
+           alt="Biodiversity research">
+      <div class="project-info">
+        <small>BIODIVERSITY</small>
+        <h3>Biodiversity Documentation</h3>
+        <p>Scientific documentation and assessment of biodiversity.</p>
+        <div class="project-links">
+          <a href="completed.html">Explore Projects →</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="explore">
+  <h2>Discover Our Research</h2>
+  <p>Explore the projects and initiatives undertaken by TBARC.</p>
+  <a href="ongoing.html">View Ongoing Projects</a>
+</section>
+
+<footer>
+  <strong>TBARC India</strong>
+  <p>Biodiversity Research, Ecology & Conservation</p>
+  <p>© 2026 TBARC. All Rights Reserved.</p>
+  <p>projects.tbarc.in</p>
+</footer>
+
+</body>
+</html>
